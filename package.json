@@ -1,0 +1,43 @@
+{
+  "name": "mobservable-reactive2015-demo",
+  "version": "1.0.0",
+  "description": "Runnable source code of the #GoReactive #mobservable talk",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mweststrate/mobservable-reactive2015-demo.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "reactive-programming",
+    "mobservable"
+  ],
+  "author": "Michel Weststrate <mweststrate@gmail.com> (http://github.com/mweststrate)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mweststrate/mobservable-reactive2015-demo/issues"
+  },
+  "homepage": "http://mweststrate.github.com/mobservable",
+  "devDependencies": {
+    "babel-core": "^5.4.7",
+    "babel-eslint": "^3.1.9",
+    "babel-loader": "^5.1.2",
+    "eslint-plugin-react": "^2.3.0",
+    "react-hot-loader": "^2.0.0-alpha-4",
+    "webpack": "^1.9.6",
+    "webpack-dev-server": "^1.8.2"
+  },
+  "dependencies": {
+    "mobservable": "^1.0.2",
+    "mobservable-react": "^2.0.0",
+    "mobservable-react-devtools": "^2.0.1",
+    "node-uuid": "^1.4.3",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
+    "react-draggable": "^1.0.1"
+  }
+}
