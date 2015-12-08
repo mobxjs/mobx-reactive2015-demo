@@ -3,7 +3,8 @@ mobservable-reactive2015-demo
 
 Simple drag & drop editor that uses [mobservable](https://github.com/mweststrate/mobservable) and React.
 The slides can be found [here](https://docs.google.com/presentation/d/16hE-cxJ8C5XQVjql17krNAeYNF_9I3n3j13ho-KLWYU/edit#slide=id.p).
-The video will follow (hopefully ;-)).
+
+Mobservable on [ReactiveConf](https://www.youtube.com/watch?v=FEwLwiizlk0)
 
 To interact with the application:
 * Click to select.
