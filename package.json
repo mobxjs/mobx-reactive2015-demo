@@ -32,7 +32,7 @@
     "webpack-dev-server": "^1.8.2"
   },
   "dependencies": {
-    "mobservable": "^1.0.2",
+    "mobservable": "^1.2.0",
     "mobservable-react": "^2.0.0",
     "mobservable-react-devtools": "^2.0.1",
     "node-uuid": "^1.4.3",

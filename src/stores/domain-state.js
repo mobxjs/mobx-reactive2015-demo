@@ -1,4 +1,4 @@
-import {observable, transaction} from 'mobservable';
+import {observable, transaction, createTransformer} from 'mobservable';
 import Box from './box';
 
 import {randomUuid} from '../utils';
@@ -43,30 +43,22 @@ export default store;
 
 window.store = store; // for demo
 
-
-
-
-
-
-
-
-
-
-
 /**
     Serialize this store to json
 */
-export function serializeState(store) {
-    return {
-        boxes: store.boxes.map(box => ({...box})),
-        arrows: store.arrows.map(arrow => ({
-            id: arrow.id,
-            to: arrow.to.id,
-            from: arrow.from.id
-        })),
-        selection: store.selection ? store.selection.id : null
-    }
-}
+const serializeBox = createTransformer(box => ({...box}));
+
+const serializeArrow = createTransformer(arrow => ({
+    id: arrow.id,
+    to: arrow.to.id,
+    from: arrow.from.id
+}));
+
+export const serializeState = createTransformer(store => ({
+    boxes: store.boxes.map(serializeBox),
+    arrows: store.arrows.map(serializeArrow),
+    selection: store.selection ? store.selection.id : null
+}));
 
 /**
     Update the store from the given json
@@ -81,10 +73,6 @@ export function deserializeState(store, data) {
     }));
     store.selection = findBox(data.selection);
 }
-
-
-
-
 
 /**
     Generate 'amount' new random arrows and boxes
