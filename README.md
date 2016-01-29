@@ -11,7 +11,7 @@ To interact with the application:
 * Boxes can be dragged around.
 * Use the input box to rename stuff.
 * CTRL + click to add new boxes. If there is an active selection an arrow will be added as well.
-* The time travelling buttons are very simple PoC implementation, I'll provide a better implementation soon (a more decent implementation didn't fit into the presentation, see [this thread](https://twitter.com/brianmfitch/status/661873711365103617) for some hints)
+* use the tiny buttons in the bottom left to generate a bunch of random boxes and arrows, and to travel forward and backward in time.
 
 ### Run the example
 
