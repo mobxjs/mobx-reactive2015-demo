@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {observable} from 'mobservable';
+import {observable, transaction} from 'mobservable';
 import {observer} from 'mobservable-react';
 import {DraggableCore} from 'react-draggable';
 
@@ -34,8 +34,10 @@ class BoxView extends Component {
     }
 
     handleDrag = (e, dragInfo) => {
-        this.props.box.x += dragInfo.position.deltaX;
-        this.props.box.y += dragInfo.position.deltaY;
+        transaction(() => {
+            this.props.box.x += dragInfo.position.deltaX;
+            this.props.box.y += dragInfo.position.deltaY;
+        });
     }
 }
 
