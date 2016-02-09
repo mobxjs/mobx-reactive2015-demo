@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {observer} from 'mobservable-react';
+import DevTools from 'mobservable-react-devtools';
 import Box from '../stores/box';
 import {randomUuid} from '../utils';
 
@@ -28,6 +29,7 @@ class Canvas extends Component {
                 </div>
                 <Sidebar store={store} />
                 <FunStuff />
+                <DevTools />
             </div>
         )
     }
