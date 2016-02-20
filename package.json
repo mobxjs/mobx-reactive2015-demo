@@ -27,7 +27,6 @@
     "babel-eslint": "^3.1.9",
     "babel-loader": "^5.1.2",
     "eslint-plugin-react": "^2.3.0",
-    "mobservable-react-devtools": "^3.0.0",
     "react-hot-loader": "^2.0.0-alpha-4",
     "webpack": "^1.9.6",
     "webpack-dev-server": "^1.8.2"
@@ -35,7 +34,7 @@
   "dependencies": {
     "mobservable": "^1.2.0",
     "mobservable-react": "^2.0.0",
-    "mobservable-react-devtools": "^2.0.1",
+    "mobservable-react-devtools": "^3.0.1",
     "node-uuid": "^1.4.3",
     "react": "^0.14.1",
     "react-dom": "^0.14.1",
