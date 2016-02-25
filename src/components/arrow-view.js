@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {observer} from 'mobservable-react';
+import {observer} from 'mobx-react';
 
 @observer
 class ArrowView extends Component {

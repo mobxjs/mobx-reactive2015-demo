@@ -1,5 +1,5 @@
 {
-  "name": "mobservable-reactive2015-demo",
+  "name": "mobx-reactive2015-demo",
   "version": "1.0.0",
   "description": "Runnable source code of the #GoReactive #mobservable talk",
   "scripts": {
@@ -8,20 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mweststrate/mobservable-reactive2015-demo.git"
+    "url": "https://github.com/mobxjs/mobx-reactive2015-demo.git"
   },
   "keywords": [
     "react",
     "reactjs",
     "reactive-programming",
-    "mobservable"
+    "mobservable",
+    "mobx"
   ],
   "author": "Michel Weststrate <mweststrate@gmail.com> (http://github.com/mweststrate)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mweststrate/mobservable-reactive2015-demo/issues"
+    "url": "https://github.com/mobxjs/mobx-reactive2015-demo/issues"
   },
-  "homepage": "http://mweststrate.github.com/mobservable",
+  "homepage": "http://mobxjs.github.com/mobx",
   "devDependencies": {
     "babel-core": "^5.4.7",
     "babel-eslint": "^3.1.9",
@@ -32,9 +33,9 @@
     "webpack-dev-server": "^1.8.2"
   },
   "dependencies": {
-    "mobservable": "^1.2.0",
-    "mobservable-react": "^2.0.0",
-    "mobservable-react-devtools": "^3.0.1",
+    "mobx": "2.0.0",
+    "mobx-react": "^3.0.0",
+    "mobx-react-devtools": "^4.0.0",
     "node-uuid": "^1.4.3",
     "react": "^0.14.1",
     "react-dom": "^0.14.1",

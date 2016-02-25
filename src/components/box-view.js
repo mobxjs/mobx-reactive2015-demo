@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {observable, transaction} from 'mobservable';
-import {observer} from 'mobservable-react';
+import {observable, transaction, computed} from 'mobx';
+import {observer} from 'mobx-react';
 import {DraggableCore} from 'react-draggable';
 
 @observer
@@ -24,7 +24,7 @@ class BoxView extends Component {
         )
     }
 
-    @observable get isSelected() {
+    @computed get isSelected() {
         return this.props.store.selection === this.props.box;
     }
 

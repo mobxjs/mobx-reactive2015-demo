@@ -1,10 +1,11 @@
-mobservable-reactive2015-demo
+mobx-reactive2015-demo
 =====================
 
-Simple drag & drop editor that uses [mobservable](https://github.com/mweststrate/mobservable) and React.
+Demo of MobX (formerly called Mobservable) on [ReactiveConf](https://www.youtube.com/watch?v=FEwLwiizlk0)
+
+Simple drag & drop editor that uses [mobx](https://github.com/mweststrate/mobx) and React.
 The slides can be found [here](https://docs.google.com/presentation/d/16hE-cxJ8C5XQVjql17krNAeYNF_9I3n3j13ho-KLWYU/edit#slide=id.p).
 
-Mobservable on [ReactiveConf](https://www.youtube.com/watch?v=FEwLwiizlk0)
 
 To interact with the application:
 * Click to select.

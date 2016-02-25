@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {observer} from 'mobservable-react';
+import {observer} from 'mobx-react';
 
 import {generateStuff} from '../stores/domain-state';
 import * as history from '../stores/time';

@@ -1,4 +1,4 @@
-import {autorun, transaction} from 'mobservable';
+import {autorun, transaction} from 'mobx';
 import store, {serializeState, deserializeState} from './domain-state';
 
 var states = [];

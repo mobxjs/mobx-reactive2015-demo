@@ -1,4 +1,4 @@
-import {observable, transaction, createTransformer} from 'mobservable';
+import {observable, transaction, createTransformer} from 'mobx';
 import Box from './box';
 
 import {randomUuid} from '../utils';

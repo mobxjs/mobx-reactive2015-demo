@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {observer} from 'mobservable-react';
-import DevTools from 'mobservable-react-devtools';
+import {observer} from 'mobx-react';
+import DevTools from 'mobx-react-devtools';
 import Box from '../stores/box';
 import {randomUuid} from '../utils';
 

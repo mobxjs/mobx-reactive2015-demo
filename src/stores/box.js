@@ -1,4 +1,4 @@
-import {observable} from 'mobservable';
+import {observable, computed} from 'mobx';
 import {randomUuid} from '../utils';
 
 export default class Box {
@@ -6,7 +6,7 @@ export default class Box {
     @observable name = "Box" + this.id;
     @observable x = 0;
     @observable y = 0;
-    @observable get width() {
+    @computed get width() {
         return this.name.length * 15;
     }
 
