@@ -33,7 +33,7 @@
     "webpack-dev-server": "^1.8.2"
   },
   "dependencies": {
-    "mobx": "2.0.0",
+    "mobx": "^2.0.0",
     "mobx-react": "^3.0.0",
     "mobx-react-devtools": "^4.0.0",
     "node-uuid": "^1.4.3",
