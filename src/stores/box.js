@@ -3,7 +3,7 @@ import {randomUuid} from '../utils';
 
 export default class Box {
     id; // for react
-    @observable name = "Box" + this.id;
+    @observable name = 'Box' + this.id;
     @observable x = 0;
     @observable y = 0;
     @computed get width() {

@@ -16,8 +16,8 @@ const store = observable({
     Some initial state
 */
 store.boxes.push(
-    new Box("Rotterdam", 100, 100),
-    new Box("Vienna", 650, 300)
+    new Box('Rotterdam', 100, 100),
+    new Box('Vienna', 650, 300)
 );
 
 store.arrows.push({
@@ -80,7 +80,7 @@ export function deserializeState(store, data) {
 export function generateStuff(amount) {
     transaction(() => {
         for(var i = 0; i < amount; i++) {
-            store.boxes.push(new Box("#" + i, Math.random() * window.innerWidth * 0.5, Math.random() * window.innerHeight));
+            store.boxes.push(new Box('#' + i, Math.random() * window.innerWidth * 0.5, Math.random() * window.innerHeight));
             store.arrows.push({
                 id: randomUuid(),
                 from: store.boxes[Math.floor(Math.random() * store.boxes.length)],
