@@ -16,7 +16,7 @@ class BoxView extends Component {
                         top: box.y
                     }}
                     onClick={this.handleClick}
-                    className={this.isSelected ? "box box-selected" : "box" }
+                    className={this.isSelected ? 'box box-selected' : 'box' }
                 >
                     {box.name}
                 </div>

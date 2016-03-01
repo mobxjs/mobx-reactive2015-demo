@@ -39,7 +39,7 @@ class Canvas extends Component {
         if (e.ctrlKey === false) {
             store.selection = null;
         } else {
-            const newBox = store.addBox("Hi.", e.clientX - 50, e.clientY - 20, store.selection);
+            const newBox = store.addBox('Hi.', e.clientX - 50, e.clientY - 20, store.selection);
             store.selection = newBox;
         }
     }
