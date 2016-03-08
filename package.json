@@ -35,7 +35,7 @@
   "dependencies": {
     "mobx": "^2.0.0",
     "mobx-react": "^3.0.0",
-    "mobx-react-devtools": "^4.0.0",
+    "mobx-react-devtools": "^4.0.2",
     "node-uuid": "^1.4.3",
     "react": "^0.14.1",
     "react-dom": "^0.14.1",
