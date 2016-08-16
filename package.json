@@ -39,6 +39,7 @@
     "node-uuid": "^1.4.3",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
-    "react-draggable": "^1.0.1"
+    "react-draggable": "^1.0.1",
+    "serializr": "0.0.3"
   }
 }

@@ -1,4 +1,6 @@
-import {observable, transaction, createTransformer} from 'mobx';
+import {observable, transaction, createTransformer, asReference} from 'mobx';
+import {createSimpleSchema, ref, identifier, child, list, serialize, deserialize, update} from 'serializr';
+
 import Box from './box';
 
 import {randomUuid} from '../utils';
@@ -11,6 +13,18 @@ const store = observable({
     arrows: [],
     selection: null
 });
+
+const arrowModel = createSimpleSchema({
+    id: identifier(),
+    from: ref(Box),
+    to: ref(Box)
+});
+
+const storeModel = createSimpleSchema({
+    boxes: list(child(Box)),
+    arrows: list(child(arrowModel)),
+    selection: ref(Box)
+})
 
 /*
     Some initial state
@@ -46,32 +60,15 @@ window.store = store; // for demo
 /**
     Serialize this store to json
 */
-const serializeBox = createTransformer(box => ({...box}));
-
-const serializeArrow = createTransformer(arrow => ({
-    id: arrow.id,
-    to: arrow.to.id,
-    from: arrow.from.id
-}));
-
-export const serializeState = createTransformer(store => ({
-    boxes: store.boxes.map(serializeBox),
-    arrows: store.arrows.map(serializeArrow),
-    selection: store.selection ? store.selection.id : null
-}));
+export function serializeState(store) {
+    return serialize(storeModel, store);
+}
 
 /**
     Update the store from the given json
 */
-export function deserializeState(store, data) {
-    const findBox = id => store.boxes.find(box => box.id === id);
-    store.boxes = data.boxes.map(box => new Box(box.name, box.x, box.y, box.id));
-    store.arrows = data.arrows.map(arrow => ({
-        id: arrow.id,
-        from: findBox(arrow.from),
-        to: findBox(arrow.to)
-    }));
-    store.selection = findBox(data.selection);
+export function deserializeState(store, json) {
+    update(storeModel, store, json);
 }
 
 /**
