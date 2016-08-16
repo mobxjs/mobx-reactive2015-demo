@@ -25,7 +25,7 @@ class BoxView extends Component {
     }
 
     @computed get isSelected() {
-        return this.props.store.selection === this.props.box;
+        return this.props.store.selection && this.props.store.selection.id === this.props.box.id;
     }
 
     handleClick = (e) => {

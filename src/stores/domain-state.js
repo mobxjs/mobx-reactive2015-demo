@@ -98,7 +98,6 @@ export function generateStuff(amount) {
     Save / Restore the state of the store while this module is hot reloaded
 */
 if (module.hot) {
-    module.hot.accept();
     if (module.hot.data && module.hot.data.store) {
         deserializeState(store, module.hot.data.store);
     }

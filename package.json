@@ -33,12 +33,12 @@
     "webpack-dev-server": "^1.8.2"
   },
   "dependencies": {
-    "mobx": "^2.0.0",
-    "mobx-react": "^3.0.0",
-    "mobx-react-devtools": "^4.0.2",
+    "mobx": "^2.4.1",
+    "mobx-react": "^3.5.3",
+    "mobx-react-devtools": "^4.2.4",
     "node-uuid": "^1.4.3",
-    "react": "^0.14.1",
-    "react-dom": "^0.14.1",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
     "react-draggable": "^1.0.1"
   }
 }
